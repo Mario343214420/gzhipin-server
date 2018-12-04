@@ -8,7 +8,7 @@ const db = require('./db');
 (async () => {
   await db;
   app.use(router);
-});
+})();
 
 app.listen(4000, err => {
   if(!err) console.log(('服务器启动完成(请访问-   http://localhost:4000 )'));
